@@ -11,5 +11,15 @@
    <p><%= dados[i].nome %></p> 
    <%}%>
   }  
+
+  <form action="/front-end/salvar" method="post">
+    <input type="text" name="nome">
+    <input type="hidden" name="modulo" value="front-end" readonly="readonly">
+    <input type="submit" value="Adicionar">
+  </form>
+  <form action="/front-end/delete" method="post">
+    <input type="text" name="nome">
+    <input type="reset" value="Remover">
+  </form>
 </body>
 </html>

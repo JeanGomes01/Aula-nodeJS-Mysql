@@ -17,4 +17,21 @@ module.exports = function(app){
         });
         
     });
+    app.post('/front-end/salvar',function(req,res){
+        var dados = req.body;
+        var connection = app.config.dbConnection()
+        connection.query('INSERT INTO conteudo SET?', dados,function(error,
+            result){
+            res.redirect('/front-end');
+        });
+    });
+    app.post('/front-end/delete',function(req,res){
+        var dados = req.body;
+        var connection = app.config.dbConnection();
+        console.log("DELETE FROM conteudo WHERE", dados);
+        connection.query('DELETE FROM conteudo WHERE?', dados,function(error,
+            result){
+            res.redirect('/front-end');
+        });
+    });
 }
