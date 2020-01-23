@@ -1,0 +1,24 @@
+{
+  "name": "project-jean",
+  "version": "1.0.0",
+  "description": "1,2,3 testando Node",
+  "main": "node.js",
+  "scripts": {
+    "test": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "aulaNode"
+  },
+  "keywords": [
+    "jeandosnode"
+  ],
+  "author": "Jean",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.0"
+  }
+}
